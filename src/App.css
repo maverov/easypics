@@ -1,22 +1,118 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+.header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  margin: 40px 0;
+}
+
+.header-text {
+  font-family: "Lora", serif;
+  font-size: 3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.navbar {
+  margin: 2rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav {
+  text-align: center;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #09d3ac;
+.navbar-toggler-icon {
+  position: relative;
+}
+
+.nav-link {
+  color: rgb(75, 75, 75);
+  font-weight: 400 !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+p.lead {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Footer */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+#footer {
+  margin-top: 8rem;
+  color: rgb(75, 75, 75) !important;
+}
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid rgb(75, 75, 75);
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: rgb(75, 75, 75);
+}
+#footer a {
+  color: rgb(75, 75, 75);
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li {
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: rgb(75, 75, 75);
+}
+#footer ul.social li a:hover {
+  color: rgb(75, 75, 75);
+}
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
 }
